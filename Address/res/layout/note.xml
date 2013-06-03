@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="二维码"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_item_all_default"
+        android:gravity="center"
+        android:text="将二维码图案放在取景框内，即可自动扫描" />
+
+    <ImageView
+        android:layout_width="160dip"
+        android:layout_height="160dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dip"
+        android:background="@drawable/qrcode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/submit_selector"
+        android:onClick="click"
+        android:text="点击开启扫描"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+</LinearLayout>

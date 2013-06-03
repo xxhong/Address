@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tablayout_title"
+        style="@style/tableItemTextBackgroud"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginTop="2dip"
+        android:gravity="center_vertical"
+        android:text="餐饮旅游"
+        android:textColor="#001fdb"
+        android:textSize="17sp" />
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/TableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d2d2d2"
+            android:paddingTop="1dip" >
+
+            <TextView
+                android:id="@+id/tv_tablayout_col1"
+                style="@style/tableItemTextBackgroud"
+                android:text="天桂山" >
+            </TextView>
+
+            <TextView
+                 android:id="@+id/tv_tablayout_col2"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="台湾小吃" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tablayout_col3"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="重庆旅游" >
+            </TextView>
+
+            <TextView
+                 android:id="@+id/tv_tablayout_col4"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="内蒙旅游" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d2d2d2"
+            android:paddingBottom="1dip"
+            android:paddingTop="1dip" >
+
+            <TextView
+              android:id="@+id/tv_tablayout_col5"
+                style="@style/tableItemTextBackgroud"
+                android:text="天桂山" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tablayout_col6"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="台湾小吃" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tablayout_col7"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="重庆旅游" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tablayout_col8"
+                style="@style/tableItemTextBackgroud"
+                android:layout_marginLeft="1dip"
+                android:text="内蒙旅游" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

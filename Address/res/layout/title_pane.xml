@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/title_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="45dip" 
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_launcher"
+        />
+	<Button 
+	    android:id="@+id/bt_title_pane_back"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:background="@drawable/title_back_0"
+	    android:layout_alignParentLeft="true"
+	    android:text="返回"
+	    android:visibility="gone"
+	    android:layout_centerVertical="true"
+	    />
+	
+</RelativeLayout>

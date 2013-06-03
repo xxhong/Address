@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/search_tool" >
+    </include>
+
+    <ProgressBar
+        android:id="@+id/weibolib_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:layout_below="@+id/include1" />
+	<TextView 
+	    android:layout_below="@+id/weibolib_pb"
+	     android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:gravity="center"
+        android:text="该无线网址未注册,请联系注册服务机构"
+        android:id="@+id/tv_notice"
+        android:background="#cbe8ea"
+        android:visibility="visible"
+	    />
+    <WebView
+        android:id="@+id/weibolib_webView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bt_back"
+        android:layout_below="@+id/tv_notice" />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/webview_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/webview_back_selector" />
+
+            <Button
+                android:id="@+id/bt_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/bt_back"
+                android:background="@drawable/webview_home_selector" />
+
+            <Button
+                android:id="@+id/bt_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/bt_home"
+                android:background="@drawable/webview_refresh_selector" />
+
+            <Button
+                android:id="@+id/bt_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="50dip"
+                android:layout_toRightOf="@+id/bt_refresh"
+                android:background="@drawable/webview_go_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
